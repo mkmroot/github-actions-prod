@@ -29,11 +29,12 @@ jobs:
 
     - name: Tag Image
       run: |
-        docker tag node-app:latest ECR_URI/node-app:latest
+        docker tag node-app:latest ${{ ECR_URI }}/node-app:latest
 
     - name: Push Image
       run: |
-        docker push 352742379644.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+        docker push ${{ ECR_URI }}/node:latest
+        #docker push 352742379644.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
 
     - name: Update Kubeconfig
       run: |
