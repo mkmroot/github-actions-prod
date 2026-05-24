@@ -33,7 +33,7 @@ jobs:
 
     - name: Push Image
       run: |
-        docker push ${{ ECR_URI }}:latest
+        docker push 352742379644.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
 
     - name: Update Kubeconfig
       run: |
