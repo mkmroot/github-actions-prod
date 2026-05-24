@@ -33,7 +33,7 @@ jobs:
 
     - name: Push Image
       run: |
-        docker push ECR_URI/node-app:latest
+        docker push ${{ ECR_URI }}:latest
 
     - name: Update Kubeconfig
       run: |
