@@ -1,4 +1,4 @@
-iname: Deploy to EKS
+name: Deploy to EKS
 
 on:
   push:
